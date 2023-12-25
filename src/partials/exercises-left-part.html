@@ -1,0 +1,77 @@
+<div class="exercise-quote">
+  <div class="quote">
+    <span class="quote-icon">
+      <svg class="quote-icon-img" width="20" height="20" aria-label="running-man-icon">
+        <use href="./img/svg/sprite.svg#icon-run-man"></use>
+      </svg>
+    </span>
+    <div class="quote-wrapper">
+      <h3 class="quote-title">
+        Quote of the day
+        <span class="icon-quote">
+          <svg class="icon-quote-img" width="20" height="20" aria-label="quote-icon">
+            <use href="./img/svg/sprite.svg#icon-inverted-commas"></use>
+          </svg>
+        </span>
+      </h3>
+      <p class="quote-text"></p>
+      <p class="quote-author"></p>
+    </div>
+  </div>
+
+  <div class="exercise-img">
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./img/quote-img/home/quote-img-mobile.webp    1x,
+          ./img/quote-img/home/quote-img-mobile@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px) and (max-width: 1439px)"
+        srcset="
+          ./img/quote-img/home/quote-img-tablet.webp    1x,
+          ./img/quote-img/home/quote-img-tablet@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/quote-img/home/quote-img-desctop.webp    1x,
+          ./img/quote-img/home/quote-img-desctop@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- Якщо браузер не підтримуе елемент picture -->
+      <img
+        loading="lazy"
+        class="img-exe"
+        srcset="./img/exercises-img/women-sports@2x.jpg 2x"
+        src="./img/exercises-img/women-sports.jpg"
+        alt="Women talking break"
+      />
+    </picture>
+  </div>
+
+  <div class="daily">
+    <span class="daily-icon">
+      <svg class="daily-icon-img" width="20" height="20" aria-label="dumbbell-icon">
+        <use href="./img/svg/sprite.svg#icon-dumbbell"></use>
+      </svg>
+    </span>
+    <div class="daily-wrapper">
+      <h3 class="daily-title">110 min</h3>
+      <p class="daily-descr">Daily norm of sports</p>
+      <p class="daily-text">
+        The World Health Organization recommends at least 150 minutes of moderate-intensity aerobic
+        physical activity throughout the week for adults aged 18-64. However, what happens if we
+        adjust that number to 110 minutes every day? While it might seem like a high number to hit,
+        dedicating 110 minutes daily to sporting activities may offer unparalleled benefits to
+        physical health, mental well-being, and overall quality of life.
+      </p>
+    </div>
+  </div>
+</div>

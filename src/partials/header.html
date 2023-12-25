@@ -1,13 +1,74 @@
-<header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+<header class="header" id="header">
+  <div class="container-header">
+    <div>
+      <a href="./index.html">
+        <svg width="132" height="24" aria-label="logo">
+          <use href="./img/svg/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <p id="user"></p>
+    </div>
+    <nav class="page-navigattion" id="navigation">
+      <a href="./index.html" class="page-navigattion-item active" id="home">
+        <span class="black" id="home-text">Home</span></a
+      >
+      <a href="./favorites.html" class="page-navigattion-item" id="favorites">
+        <span id="favorites-text">Favorites</span></a
+      >
+    </nav>
+    <ul class="social-links">
+      <li class="social-links-items">
+        <a href="https://www.facebook.com/goITclub/" target="_blank">
+          <svg
+            class="social-link-header-efect"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32"
+            aria-label="facebook"
+          >
+            <use href="./img/svg/sprite.svg#icon-facebook" />
+          </svg>
+        </a>
       </li>
+      <li class="social-links-items">
+        <a href="https://www.instagram.com/goitclub/" target="_blank">
+          <svg
+            class="social-link-header-efect"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32"
+            aria-label="instagram"
+          >
+            <use href="./img/svg/sprite.svg#icon-instagram" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-links-items">
+        <a href="https://www.youtube.com/c/GoIT" target="_blank">
+          <svg
+            class="social-link-header-efect"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32px"
+            height="32"
+            aria-label="youtube"
+          >
+            <use href="./img/svg/sprite.svg#icon-youtube" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-links-items" id="sign-in-js">
+        <button id="sign-in">
+          <img loading="lazy" src="./img/icon-google.svg" alt="google" width="18" height="18" />
+          SignIn
+        </button>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+        <button id="sign-out" class="display-none">Sign out</button>
       </li>
     </ul>
-  </nav>
+    <button class="burger-button" id="burger-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+        <use href="./img/svg/sprite.svg#icon-menu" stroke="#242424" />
+      </svg>
+    </button>
+  </div>
 </header>

@@ -1,0 +1,118 @@
+.muscles-section {
+  margin-top: 20px;
+  margin: 0 auto;
+}
+.muscles-is-hidden {
+  visibility: hidden;
+}
+.muscles-list {
+  display: flex;
+  /* width: 335px; */
+  flex-direction: column;
+  row-gap: 15px;
+  flex-wrap: nowrap;
+}
+.muscles-item {
+  position: relative;
+  border-radius: 12px;
+  display: inline-block;
+  transition: scale var(--transition-timing);
+}
+
+.muscles-item:hover, .muscles-item:focus {
+  transform: scale(1.05);
+}
+
+
+
+.muscles-image {
+  border-radius: 12px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.muscles-link {
+  display: flex;
+  align-items: center;
+}
+
+.muscles-box-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.muscles-link img {
+  display: block;
+}
+
+/*
+
+.muscles-box-menu {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+} */
+.muscles-small-title {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.muscles-text {
+  color: #f4f4f466;
+  font-family: var(--primary-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .muscles-list {
+    max-width: 705px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 15px;
+    row-gap: 32px;
+  }
+  .muscles-item {
+    position: relative;
+    flex-basis: calc((100% - 30px) / 3);
+    /* width: 225px; */
+    height: 225px;
+  }
+}
+/* ------------------------- TABLET ------------------------- */
+/* ------------------------- DESKTOP ------------------------- */
+@media screen and (min-width: 1440px) {
+  .muscles-section {
+    margin-top: 0px;
+    margin: 0 auto;
+  }
+  .muscles-list {
+    max-width: 900px;
+  }
+  .muscles-item {
+    position: relative;
+    /* width: 290px; */
+    height: 242px;
+    /* flex-basis: calc((100% - 30px) / 3); */
+  }
+
+  .muscles-image {
+    border-radius: 12px;
+    width: 290px;
+    height: 242px;
+  }
+
+  .muscles-small-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

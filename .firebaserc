@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "hosting-test-2fa75"
+  },
+  "headers": [
+    {
+      "key": "Cross-Origin-Embedder-Policy",
+      "value": "unsafe-none"
+    }
+  ]
+  
+}

@@ -1,0 +1,107 @@
+:root {
+  /* COLORS */
+  --primary-color: #f4f4f4;
+  --second-color: #242424;
+  --stars-background-active-color: #eea10c;
+  --first-color-icon: #4e4e4e;
+  --second-color-icon: #cacaca;
+  --color-text-subtitle: #777777;
+  --color-text-modal: #a1a1a1;
+  --color-text-in-card: rgba(244, 244, 244, 0.4);
+  --color-subtitle-in-card: #a7a7a7;
+  --gradient: linear-gradient(0deg, rgba(17, 17, 17, 0.5) 0%, rgba(17, 17, 17, 0.5) 100%),
+    url(<path-to-image>), lightgray -50.028px 0px / 125.192% 100% no-repeat;
+  /* FONTS */
+  --primary-font: 'DM Sans', sans-serif;
+  --primary-weight: 400;
+  /* ANIMATION */
+  --animation: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: var(--primary-weight);
+  font-style: normal;
+  color: var(--second-color);
+  background-color: var(--primary-color);
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.anchor {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 374px) {
+  .container {
+    min-width: 335px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+   padding: 24px 32px 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+.position-page {
+  display: flex;
+  gap: 80px;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .position-page {
+    gap: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .position-page {
+    gap: 32px;
+    flex-direction: row;
+  }
+}
