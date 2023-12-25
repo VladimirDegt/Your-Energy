@@ -97,7 +97,6 @@ export async function loadSectionOnClick(dataFilter) {
 
     pagination.setCurrentPage(1);
   } catch (error) {
-      loader.close();
     console.log(error.message);
   }
   // loader.close()
