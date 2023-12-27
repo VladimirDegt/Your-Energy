@@ -5,7 +5,7 @@
 
 ## API Your Energy
 
-![Swagger](https://your-energy.b.goit.study/api-docs/)
+[Swagger](https://your-energy.b.goit.study/api-docs/)
 
 ## Моя участь
 
